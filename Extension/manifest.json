@@ -1,0 +1,21 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Translator Themes Settings (TTS)",
+  "version": "1.0.0",
+  "description": "Translator Themes Settings - This is an open source extension that will allow you to change the color scheme on translate.google.com",
+  "icons": {
+    "128": "Images/Logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://translate.google.com/*"],
+      "css": ["style.css"],
+      "js" : ["translator.js"]
+    }
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Translator Themes Settings (TTS)",  
+    "default_popup": "Popup.html"  
+  }
+}
